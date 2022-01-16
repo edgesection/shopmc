@@ -9,6 +9,7 @@
 
 Теперь в указанных файлах PHP и JS, нужно в переменные `token` и `idGroup` вставить значения  
 Пример:
+
   <?php
   $token = 'y3g98fuy83974uyf8j3y4f783984ufik934uf8u438rfku43f';
   $idGroup = '1';
