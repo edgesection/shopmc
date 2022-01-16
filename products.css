@@ -1,0 +1,252 @@
+main{
+	position: relative;
+	width: 1120px;
+	left: calc(50% - 560px);
+	padding: 20px 40px;
+	box-sizing: border-box;
+	overflow: hidden;
+	padding: 70px 40px;
+}
+main div.categories{
+	position: relative;
+    width: 200px;
+    /* left: 40px; */
+    display: inline-block;
+    background: white;
+    padding: 0px 10px;
+    border-radius: 5px;
+    /* margin: 20px 0px; */
+    top: 0px;
+    vertical-align: top;
+}
+main span#nameSection{
+	position: absolute;
+    width: calc(100% - 560px);
+    margin: 10px;
+    box-sizing: border-box;
+    display: inline-block;
+    font-size: 110%;
+    font-weight: bold;
+}
+main div.categories span#title{
+	position: relative;
+	margin: 10px 0px;
+	font-size: 110%;
+	font-weight: bold;
+	display: block;
+	user-select: none;
+	cursor: pointer;
+}
+main div.categories div{
+	position: relative;
+	margin: 5px 0px;
+	font-size: 110%;
+	cursor: pointer;
+	display: none;
+	border-radius: 5px;
+	padding: 5px 10px;
+	box-sizing: border-box;
+}
+/*main div.categories div:hover{
+	background: #e6e6e6;
+}*/
+main div.categories div span#count{
+	position: relative;
+	float: right;
+	right: 0px;
+	opacity: 0.4;
+}
+
+main div.products{
+	position: relative;
+    width: calc(100% - 480px);
+    /* left: 10px; */
+    background: white;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 40px 10px 0px 10px;
+    box-sizing: border-box;
+    user-select: none;
+    cursor: pointer;
+    /* float: right; */
+    /* right: 250px; */
+    display: inline-block;
+}
+main div.products div.notProducts{
+	position: relative;
+	display: block;
+	text-align: center;
+	padding: 5px 0px;
+	font-weight: bold;
+}
+main div.products div.product{
+	position: relative;
+    width: calc((100% / 3) - 30px);
+	margin: 5px 0px 10px 5px;
+    display: inline-block;
+	padding: 10px;
+	border-radius: 5px;
+}
+main div.products div.product:hover{
+	background: #e6e6e6;
+}
+main div.products div.product img{
+	position: relative;
+	border-radius: 5px;
+	width: 100%;
+	height: 150px;
+	object-fit: cover;
+}
+main div.products div.product span#name{
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 20px;
+	font-size: 110%;
+	margin: 5px 0px;
+	font-weight: bold;
+	overflow: hidden;
+    text-overflow: ellipsis;
+	white-space: nowrap;
+}
+main div.products div.product span#price{
+	position: relative;
+	display: block;
+	overflow: hidden;
+    text-overflow: ellipsis;
+	white-space: nowrap;
+}
+main div.products div.product a{
+	text-decoration: none;
+	outline: none;
+	color: black;
+}
+main div.products div.product a div.buy{
+	position: relative;
+	width: 100%;
+	padding: 10px 0px;
+	text-align: center;
+	color: white;
+	background: steelblue;
+	border-radius: 5px;
+	margin: 10px 0px 5px 0px;
+}
+
+main div.lastNews{
+	position: relative;
+    width: 200px;
+    float: right;
+    /* right: 40px; */
+    display: inline-block;
+    background: white;
+    padding: 10px 10px;
+    border-radius: 5px;
+}
+main div.lastNews span#name{
+    position: relative;
+    font-weight: bold;
+    display: block;
+	font-size: 120%;
+}
+main div.lastNews div.news{
+	position: relative;
+	display: block;
+}
+main div.lastNews div.news div.post{
+	position: relative;
+	display: block;
+}
+main div.lastNews div.news div.post span#author{
+	font-weight: bold;
+}
+main div.lastNews div.news div.post span{
+	position: relative;
+	width: 100%;
+	display: block;
+	margin: 5px 0px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+main div.lastNews div.news div.post img{
+	position: relative;
+	width: 100%;
+}
+main div.lastNews div.news div.post span#author:hover{
+	color: darkblue;
+	cursor: pointer;
+}
+main div.lastNews div.news div.post span#time{
+	opacity: 0.6;
+}
+
+@media all and (max-width: 1120px){
+	
+	main {
+		width: 100%;
+		left: 0px;
+	}
+	main div.products div.product{
+		width: calc((100% / 2) - 25px);
+	}
+	
+}
+
+@media all and (max-width: 920px){
+	
+	main div.categories, main div.products, main div.lastNews{
+		display: block;
+	}
+	main div.products div.product{
+		width: calc(100% - 30px);
+	}
+	main div.categories{
+		width: 100%;
+		padding: 10px 10px;
+		margin: 0px 0px 20px 0px;
+		box-sizing: border-box;
+	}
+	main div.products{
+		width: 100%;
+		margin: 0px;
+	}
+	main div.lastNews{
+		width: 100%;
+		margin: 20px 0px;
+		box-sizing: border-box;
+	}
+	
+}
+
+/*
+
+@media all and (max-width: 1100px){
+	
+	main div.products div.product{
+		width: calc((100% / 2) - 25px);
+	}
+	
+}
+
+@media all and (max-width: 700px){
+	
+	main div.products{
+		width: 100%;
+		left: 0%;
+	}
+	
+}
+
+@media all and (max-width: 700px){
+	
+	main div.categories{
+		width: calc(100% - 20px);
+		left: 10px;
+	}
+	main div.products div.product{
+		width: calc(100% - 30px);
+	}
+	
+}
+
+*/

@@ -1,0 +1,92 @@
+*{
+	margin: 0px;
+}
+body{
+	background: #f7f7f7;
+	overflow-x: hidden;
+}
+body::-webkit-scrollbar{
+	display: none;
+}
+
+header{
+	position: fixed;
+	top: 0px;
+	width: calc(100% - 80px);
+	height: 40px;
+	padding: 5px 40px;
+	background: white;
+	z-index: 1;
+}
+header a{
+	text-decoration: none;
+	outline: none;
+	color: black;
+}
+header div.otherPage a{
+	text-decoration: none;
+	outline: none;
+	color: black;
+}
+header div.logo{
+	position: relative;
+	display: inline-block;
+	user-select: none;
+	cursor: pointer;
+}
+header div.logo img{
+	position: relative;
+	width: 40px;
+	height: 40px;
+	border-radius: 40px;
+	display: inline-block;
+}
+header div.logo span{
+	position: relative;
+	font-size: 120%;
+	display: inline-block;
+	font-weight: bold;
+	top: -12px;
+	left: 5px;
+}
+
+header img#menu{
+	position: relative;
+	width: 40px;
+	height: 40px;
+	float: right;
+	right: 0px;
+	display: none;
+	user-select: none;
+	cursor: pointer;
+}
+
+header div.otherPage{
+	position: relative;
+	float: right;
+	right: 0px;
+	top: 10px;
+}
+header div.otherPage span{
+	position: relative;
+	margin: 0px 0px 0px 20px;
+	font-size: 110%;
+}
+header div.otherPage span:hover{
+	color: steelblue;
+	cursor: pointer;
+}
+
+@media all and (max-width: 500px){
+	
+	header{
+		width: calc(100% - 20px);
+		padding: 5px 10px;
+	}
+	header div.otherPage{
+		display: none;
+	}
+	header img#menu{
+		display: inline-block;
+	}
+}

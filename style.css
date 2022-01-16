@@ -1,0 +1,214 @@
+main{
+	position: relative;
+	width: 100%;
+	display: none;
+	padding: 60px 0px;
+}
+
+main div.bannerSlide{
+	position: relative;
+    width: calc(100% - 40px);
+    left: 20px;
+    margin: 10px 0px;
+    border-radius: 5px;
+    display: block;
+    overflow: hidden;
+}
+
+main img#bannerSlide, main img#banner2Slide{
+	position: relative;
+	width: 100%;
+	object-fit: cover;
+}
+main img#banner2Slide{
+	position: absolute;
+	top: 0px;
+	left: 100%;
+}
+
+main div.banner{
+	position: relative;
+    width: 600px;
+    left: calc(50% - 300px);
+    margin: 10px 0px;
+    border-radius: 5px;
+    display: block;
+    overflow: hidden;
+}
+
+main img#banner, main img#banner2{
+	position: relative;
+	width: 100%;
+	height: 300px;
+	object-fit: cover;
+	display: none;
+}
+main img#banner2{
+	position: absolute;
+	top: 0px;
+	left: 100%;
+}
+
+main div.title{
+	position: relative;
+	font-size: 150%;
+	font-weight: bold;
+	text-align: center;
+	display: block;
+	margin: 20px 0px;
+}
+main div.post{
+	position: relative;
+	width: 100%;
+	display: block;
+}
+main div.post div.elementPost{
+	position: relative;
+	width: 100%;
+	margin: 20px 0px;
+	display: inline-block;
+}
+main div.post div.elementPost div{
+	position: relative;
+	width: calc(50% - 20px);
+	display: inline-block;
+}
+main div.post div.elementPost div.text span{
+	position: relative;
+	display: inline-block;
+	width: 40%;
+	text-align: justify;
+	font-size: 110%;
+	left: 100%;
+}
+main div.post div.elementPost div.image img{
+	position: relative;
+	display: inline-block;
+	width: 40%;
+	border-radius: 5px;
+	background: white;
+	padding: 10px;
+	box-sizing: border-box;
+}
+main div.post div.elementPost1 div.text, main div.post div.elementPost3 div.text{
+	float: right;
+	right: 0px;
+}
+main div.post div.elementPost1 div.text span{
+	
+}
+main div.post div.elementPost div.image img{
+	float: right;
+	right: 100%;
+}
+main div.post div.elementPost2 div.image{
+	float: right;
+	right: 0px;
+}
+main div.post div.elementPost2 div.image img{
+	float: left;
+	left: 100%;
+}
+main div.post div.elementPost2 div.text span{
+	float: right;
+	right: 100%;
+	left: auto;
+}
+
+main div.lastProduct{
+	position: relative;
+    width: 600px;
+    left: calc(50% - 300px);
+    height: 250px;
+    overflow: hidden;
+    background: white;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+main div.lastProduct>div{
+	position: relative;
+    width: 50%;
+    display: inline-block;
+    height: 100%;
+}
+main div.lastProduct div.leftBlock img{
+	position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+main div.lastProduct div.rightBlock{
+	float: right;
+    right: 0px;
+    display: inline-block;
+    padding: 0px 10px;
+    box-sizing: border-box;
+}
+main div.lastProduct div.rightBlock span{
+	position: relative;
+	display: block;
+	font-size: 120%;
+	text-align: right;
+}
+main div.lastProduct div.rightBlock span#price{
+	font-weight: bold;
+}
+main div.lastProduct div.rightBlock span#desc{
+	font-size: 100%;
+    height: 55px;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+main div.lastProduct div.rightBlock a div.buy{
+	position: absolute;
+    width: 100%;
+    padding: 10px 0px;
+    background: steelblue;
+    color: white;
+    font-size: 110%;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    bottom: 0px;
+}
+
+@media all and (max-width: 1000px){
+	
+	main div.post div.elementPost div.image img, main div.post div.elementPost div.text span{
+		width: 60%;
+	}
+	
+}
+
+@media all and (max-width: 700px){
+	
+	main div.banner{
+		width: calc(100% - 40px);
+		left: 20px;
+	}
+	
+	main div.lastProduct{
+		width: calc(100% - 40px);
+		left: 20px;
+		height: auto;
+	}
+	main div.lastProduct>div{
+		width: 100%;
+	}
+	
+	main div.lastProduct div.rightBlock{
+		margin: 10px 0px 0px 0px;
+	}
+	
+	main div.lastProduct div.rightBlock a div.buy{
+		position: relative;
+		margin: 10px 0px 0px 0px;
+	}
+	
+	main div.post div.elementPost div.image img, main div.post div.elementPost div.text span{
+		width: 90%;
+	}
+	
+}
